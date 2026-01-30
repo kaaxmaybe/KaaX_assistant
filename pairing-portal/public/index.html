@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KaaX Assistant • Pairing Portal</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="particles-js"></div>
+  
+  <div class="portal-container">
+    <div class="glitch-header" data-text="KAAx ASSISTANT">KAAx ASSISTANT</div>
+    
+    <div class="status-bar">
+      <span class="status-dot" id="statusDot"></span>
+      <span id="statusText">Initializing secure channel...</span>
+    </div>
+    
+    <div class="content-area">
+      <div class="step active" id="step1">
+        <div class="step-icon">❶</div>
+        <h2>SCAN QR CODE</h2>
+        <p class="subtitle">Point your WhatsApp camera at the code below</p>
+        <div class="qr-container" id="qrContainer">
+          <div class="loader"></div>
+          <div class="scan-line"></div>
+        </div>
+        <div class="instructions">
+          <span>📱 Open WhatsApp > Settings > Linked Devices > Link a Device</span>
+        </div>
+      </div>
+      
+      <div class="step" id="step2">
+        <div class="step-icon">❷</div>
+        <h2>SESSION GENERATED</h2>
+        <p class="subtitle">Your secure session ID is ready</p>
+        <div class="session-box" id="sessionBox">
+          <div class="session-placeholder">Waiting for session delivery...</div>
+        </div>
+        <div class="actions">
+          <button class="glitch-button" id="downloadBtn" disabled>
+            <span>DOWNLOAD .ENV</span>
+            <span>DOWNLOAD .ENV</span>
+          </button>
+          <button class="secondary-btn" onclick="location.reload()">
+            GENERATE NEW CODE
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <div class="creator">Crafted with ☠️ by 𝐊aaXHunter</div>
+      <div class="security-badge">AES-256 • END-TO-END ENCRYPTED • NO LOGS</div>
+    </div>
+  </div>
+
+  <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
