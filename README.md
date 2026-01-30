@@ -18,7 +18,7 @@ pkg install nodejs git ffmpeg python -y
 npm install -g npm@latest
 
 # Clone repository
-git clone https://github.com/Kaamaybe/KaaX_assistant
+git clone https://github.com/Kaaxmaybe/KaaX_assistant
 cd KaaX-Assistant
 
 # Install dependencies
